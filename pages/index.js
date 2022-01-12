@@ -1,5 +1,8 @@
 import { useState } from 'react'
 
+function Button({ onClick, children }) {
+  return <button onClick={onClick}>{children}</button>
+}
 
 function Counter() {
   const [counter, setCounter] = useState(1)
@@ -13,17 +16,19 @@ function Counter() {
   }
   
   return (
-    <div>
+    <>
+      <h1>Counter</h1>
       <div>{counter}</div>
-      <button onClick={addCounter}>+</button>
-      <button onClick={subCounter}>-</button>
-    </div>
+      <div>
+        <Button onClick={addCounter}>+</Button>
+        <Button onClick={subCounter}>-</Button>
+      </div>
+    </>
   )
 }
 
 function Home() {
   return <Counter />
 }
-
 
 export default Home
