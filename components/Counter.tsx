@@ -21,9 +21,9 @@ function Counter() {
       <h1>Counter</h1>
       <div>{counter}</div>
       <div>
-        <Button onClick={subCounter}>-</Button>
-        <Button onClick={resetCounter}>0</Button>
-        <Button onClick={addCounter}>+</Button>
+        <Button onClick={subCounter} icon={'-'} />
+        <Button onClick={resetCounter} icon={'0'} />
+        <Button onClick={addCounter} icon={'+'} />
       </div>
     </>
   )
