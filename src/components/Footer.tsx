@@ -5,7 +5,7 @@ type FooterProps = {
 const Footer: React.FC = ({ children }: FooterProps) => {
   return (
     <footer
-      className='position-absolute bottom-0 start-50 translate-middle-x'
+      className='position-absolute bottom-0 start-50 translate-middle-x text-center'
     >
       <a
         href="https://github.com/felipepereirapinto/next-react-counter"
