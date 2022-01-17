@@ -1,7 +1,5 @@
-import { ReactChildren } from "react"
-
 type DisplayProps = {
-  children: ReactChildren
+  children: React.ReactChildren
 }
 
 const Display: React.FC = ({ children }: DisplayProps) => {
