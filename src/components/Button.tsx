@@ -1,14 +1,14 @@
 type ButtonProps = {
-  onClick: () => void
+  onClick: React.MouseEventHandler<HTMLButtonElement>
   icon: string
-  className: string
+  color: string
 }
 
-function Button({ onClick, icon, className }: ButtonProps) {
+const Button = ({ onClick, icon, color }: ButtonProps) => {
   return (
     <button
       type="button"
-      className={'btn btn-lg ' + className}
+      className={'btn btn-lg mx-1 btn-' + color}
       onClick={onClick}
     >
       {icon}
