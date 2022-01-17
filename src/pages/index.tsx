@@ -1,5 +1,6 @@
-import Counter from '../components/Counter'
 import Head from 'next/head'
+import Counter from '../components/Counter'
+import Footer from '../components/Footer'
 
 function Home() {
   return (
@@ -16,6 +17,8 @@ function Home() {
     </Head>
     
     <Counter />
+
+    <Footer>Made with 💜 by Felipe</Footer>
   </>
   )
 }
